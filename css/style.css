@@ -97,13 +97,17 @@ footer{
 }
 
 header{
-  background-attachment: fixed; /* Parallax effect */
+  background-attachment: fixed; /* Parallax effect */     
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
   color: white;
   height: 400px;                /* Parallax effect */
   background: url('../images/header.jpg');
+  /*Your Code Here*/
+  /*Set background-image to header.jpg */
+ 
+
   grid-column: 1 / -1;  /*Can you explain what this does?*/
   grid-row: 1 / auto;   /*Can you rewrite it?*/
 }
@@ -143,8 +147,7 @@ header p{
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
-  margin: auto;
-  align-self: auto;
+  align-self: center;
 }
 @media all and (min-width: 800px){
   nav{
