@@ -103,7 +103,7 @@ header{
   background-size: cover;       /* Parallax effect */
   color: white;
   height: 400px;                /* Parallax effect */
-  background: url("../images/header.jpg");
+  background-image: url("../images/header.jpg");
   /*Your Code Here*/
   /*Set background-image to header.jpg */
  
