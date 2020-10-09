@@ -76,7 +76,6 @@ nav{
   background-color: #ddd;
   padding: 25px 0;
   text-align: left;
-  text-decoration: none;
 }
 
 footer{
@@ -92,18 +91,19 @@ footer{
 .container{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: auto auto auto auto auto;
   row-gap: 15px;
+  overflow: hidden;
 }
 
 header{
-  background-attachment: fixed; /* Parallax effect */     
+  background-attachment: fixed; /* Parallax effect */
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
   color: white;
   height: 400px;                /* Parallax effect */
-  background: url('../images/header.jpg');
+  background: url("../images/header.jpg");
   /*Your Code Here*/
   /*Set background-image to header.jpg */
  
@@ -119,12 +119,11 @@ header p{
 }
 .about, .method, .clients, .contact{
   grid-column: 2 / span 1;
-  overflow: hidden;
 }
 .about-image, .method-image, .clients-image, .contact-image{
   grid-column: 1/ -1;
+  grid-row: 1 / auto;
   max-height: 700px;
-  max-width: 100%;
   overflow: hidden;
 }
 .about, .about-image{
@@ -154,8 +153,10 @@ header p{
     padding: 30px 0px;
     /*Your code here:*/
     text-align: right;
+    vertical-align: middle;
   }
   .container{
+    display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 400px 400px 400px 400px 400px;
     overflow: hidden;
@@ -163,12 +164,10 @@ header p{
 
   .about, .clients, .method-image, .contact-image{
     grid-column: 3 / span 2;
-    overflow: hidden;
   }
 
   .about-image, .clients-image, .method, .contact{
     grid-column: 2 / span 2;
-    overflow: hidden;
   }
 }
 
